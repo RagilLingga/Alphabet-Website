@@ -1,0 +1,54 @@
+h2 {
+  background-color: #0A4D68;
+  width: 415px;
+  margin-left: 460px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+table {
+  background-color: #088395;
+  width: 200px;
+  border-collapse: separate; /* Mengatur border-collapse menjadi separate */
+  border-spacing: 10px; /* Memberikan jarak sekat antara td */
+  margin: 0 auto; /* Mengatur tabel di tengah */
+}
+th, td {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 8px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: normal;
+  font-size: 30px;
+}
+
+th {
+  background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+td {
+  background-color: #ffffff;
+  border: 2px solid black; /* Menambahkan border pada elemen <td> */
+
+  position: relative; /* Menjadikan posisi relatif untuk menempatkan ikon */
+}
+
+td::after {
+  content: ""; /* Membuat elemen kosong setelah elemen td */
+  display: block;
+  position: absolute;
+  bottom: -20px; /* Menentukan posisi vertikal ikon */
+  left: 50%; /* Menentukan posisi horizontal ikon */
+  transform: translateX(-50%); /* Membuat ikon berada di tengah horizontal */
+  width: 24px; /* Mengatur lebar ikon */
+  height: 24px; /* Mengatur tinggi ikon */
+  background-image: url("icon.png"); /* Ganti "icon.png" dengan URL gambar ikon Anda */
+  background-size: cover;
+}
